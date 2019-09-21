@@ -1,0 +1,45 @@
+Blackjack
+Spec, write out the requirements
+
+- Player and Dealer (Computer)
+- Deck, able to shuffle the Deck
+- Deal a hand, take a card from the deck deal it to the dealer, then the player, etc.
+- Cards can be face up or down
+- Ace can have value 1 or 11
+- Stand, hit (take a card)
+- Dealer has no options but to hit if less 17
+- 21, player cannot hit anymore and their turn ends
+
+Classes: Card, Deck, hand
+
+Card:
+ Suit (Spades, Hearts, Clubs or Diamonds)
+ Rank - 1 and 11
+ Show
+
+ Deck - 52 card:
+ shuffle
+ suits, ranks
+ deck
+ deal_card
+ replace_with
+ pop
+
+ deck of cards: for each suits, fill wirth ranks
+
+ Hand Class to dealer and Player
+ - gives us the card dealt
+ - dealt cards array -  method to add cards to this array
+ - total value of player's or dealer's dealt Cards
+ - showing the details of each card dealt and the total value
+
+ Ace can have value 1 or 11
+
+ Add card method spec:
+ - Create two cards, add them to hand, verify few things
+
+ Hand value
+ - implement a method that calculate a value of a hand
+- All face cards have value 10 (Queen, King, Jack)
+- All number cards have their value en their rank
+- Ace have value or 1 or 11
